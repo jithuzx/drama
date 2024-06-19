@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    line-height: 70px;
+    background: rgba(0,0,0,0.5);
+    padding: 0 80px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+}
+
+nav .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar h3{
+    font-size: 1.7em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+nav .navbar .nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+nav .navbar .nav-items li{
+    list-style: none;
+}
+
+nav .navbar .nav-items li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+nav .navbar .nav-items li a:hover{
+    color: red;
+}
+
+video{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    object-fit: cover;
+    background:rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.container{
+    margin: 450px 10px 0 40px;
+}
+
+.container h2{
+    color: rgb(255, 0, 0);
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.container p{
+    color: white;
+    font-size: 1em;
+    font-weight: 20;
+    width: 50%;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.container a{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.container a:hover,
+.container a:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #f50000;
+}
+
+.container a:active {
+  opacity: .5;
+}
